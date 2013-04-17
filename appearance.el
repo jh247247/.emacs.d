@@ -1,15 +1,16 @@
-(setq visible-bell t
-      font-lock-maximum-decoration t
+
+
+(setq font-lock-maximum-decoration t
       color-theme-is-global t
       truncate-partial-width-windows nil)
 
-(set-face-background 'region "#464740")
+;;(set-face-background 'region "#464740")
 
 ;; Highlight current line
 (global-hl-line-mode 1)
 
 ;; Customize background color of lighlighted line
-(set-face-background 'hl-line "#222222")
+;; (set-face-background 'hl-line "#222222")
 
 ;; Highlight in yasnippet
 (set-face-background 'yas/field-highlight-face "#333399")
@@ -34,5 +35,10 @@
 
 ;; Make zooming affect frame instead of buffers
 (require 'zoom-frm)
+
+;; go back to old, comfortable theme...
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-billw)
 
 (provide 'appearance)

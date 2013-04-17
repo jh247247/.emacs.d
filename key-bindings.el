@@ -70,7 +70,7 @@
 
 ;; Use shell-like backspace C-h, rebind help to F1
 (define-key key-translation-map [?\C-h] [?\C-?])
-(global-set-key (kbd "<f1>") 'help-command)
+(global-set-key (kbd "<f2>") 'help-command)
 
 (global-set-key (kbd "M-h") 'kill-region-or-backward-word)
 
@@ -319,5 +319,10 @@
 (define-key occur-mode-map (kbd "v") 'occur-mode-display-occurrence)
 (define-key occur-mode-map (kbd "n") 'next-line)
 (define-key occur-mode-map (kbd "p") 'previous-line)
+
+
+;; Set a quick and easy keybind to compile again
+(global-set-key (kbd "<f1>") 'compile-again)
+
 
 (provide 'key-bindings)

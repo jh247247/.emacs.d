@@ -95,6 +95,7 @@
 (require 'setup-ffip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
+(require 'setup-compile)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
