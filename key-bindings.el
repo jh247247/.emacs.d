@@ -321,7 +321,7 @@
 (define-key occur-mode-map (kbd "p") 'previous-line)
 
 
-;; Set a quick and easy keybind to compile again
+;; Set a quick and easy keybind to call make
 (global-set-key (kbd "<f1>") 'compile-again)
 
 

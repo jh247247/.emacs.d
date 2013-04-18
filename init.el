@@ -1,3 +1,6 @@
+;; recompile directory because reasons...
+(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
+
 ;; Turn off mouse interface early in startup to avoid momentary display
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))

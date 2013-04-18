@@ -11,4 +11,6 @@
 (defadvice kill-whole-line (after fix-cookies activate)
   (myorg-update-parent-cookie))
 
+(add-hook 'org-mode-hook 'flyspell-mode)
+
 (provide 'setup-org)

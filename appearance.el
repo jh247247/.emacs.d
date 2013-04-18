@@ -41,4 +41,15 @@
 (color-theme-initialize)
 (color-theme-billw)
 
+;; add syntax highlighting for special tags (TODO, FIXME, KLUDGE)
+(require 'fic-mode)
+(add-hook 'prog-mode-hook 'turn-on-fic-mode)
+
+;; highlight uneeded whitespace and columns past char 80
+;; 70 is better for small laptop screens...
+(require 'whitespace)
+(setq whitespace-line-column 80)
+(setq whitespace-style '(face lines-tail))
+(global-whitespace-mode t)
+
 (provide 'appearance)
