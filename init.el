@@ -99,6 +99,7 @@
 (require 'setup-html-mode)
 (require 'setup-paredit)
 (require 'setup-compile)
+(require 'setup-autocomplete)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
