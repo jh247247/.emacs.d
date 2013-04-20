@@ -1,6 +1,7 @@
 ;; recompile directory because reasons...
 ;;(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
 
+
 ;; Turn off mouse interface early in startup to avoid momentary display
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -99,9 +100,12 @@
 (require 'setup-paredit)
 (require 'setup-compile)
 (require 'setup-autocomplete)
+(require 'setup-cc-mode)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
+;; don't know if this will play nice with paredit...
+(add-hook 'prog-mode-hook 'turn-on-smartparens-mode)
 
 ;; Language specific setup files
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
