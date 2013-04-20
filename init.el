@@ -1,5 +1,5 @@
 ;; recompile directory because reasons...
-(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
+;;(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
 
 ;; Turn off mouse interface early in startup to avoid momentary display
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -47,8 +47,6 @@
 ;; Are we on a mac?
 (setq is-mac (equal system-type 'darwin))
 
-;; Setup elnode before packages to stop it from starting a server
-;;(require 'setup-elnode)
 
 ;; Setup packages
 (require 'setup-package)
@@ -65,13 +63,14 @@
    (cons 'visual-regexp melpa)
    (cons 'smartparens melpa)
    (cons 'elisp-slime-nav melpa)
-   ;(cons 'elnode marmalade)
    (cons 'slime-js marmalade)
    (cons 'git-commit-mode melpa)
    (cons 'gitconfig-mode melpa)
    (cons 'gitignore-mode melpa)
    (cons 'clojure-mode melpa)
-   (cons 'nrepl melpa)))
+   (cons 'nrepl melpa)
+   (cons 'auctex melpa)
+   (cons 'cdlatex melpa)))
 
 (condition-case nil
     (init--install-packages)

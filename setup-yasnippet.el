@@ -30,6 +30,16 @@
 (define-key yas/keymap (kbd "C-e") 'yas/goto-end-of-active-field)
 (define-key yas/keymap (kbd "C-a") 'yas/goto-start-of-active-field)
 
+;; make yasnippet expand from C-<tab> instead of just <tab>
+(add-hook 'org-mode-hook
+            (lambda ()
+              ;; yasnippet
+              (set (make-local-variable 'yas/trigger-key) "C-<tab>")
+              (define-key yas/keymap "C-<tab>" 'yas/next-field-group)))
+
+
+
+
 ;; No dropdowns please, yas
 (setq yas/prompt-functions '(yas/ido-prompt yas/completing-prompt))
 

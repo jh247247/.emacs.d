@@ -162,7 +162,7 @@
 (global-set-key (kbd "M-j") (lambda () (interactive) (join-line -1)))
 
 ;; Help should search more than just commands
-(global-set-key (kbd "<f1> a") 'apropos)
+(global-set-key (kbd "<f2> a") 'apropos)
 
 ;; Should be able to eval-and-replace anywhere.
 (global-set-key (kbd "C-c C-e") 'eval-and-replace)

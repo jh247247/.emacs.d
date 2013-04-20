@@ -12,5 +12,6 @@
   (myorg-update-parent-cookie))
 
 (add-hook 'org-mode-hook 'flyspell-mode)
+(add-hook 'org-mode-hook 'turn-on-org-cdlatex)
 
 (provide 'setup-org)
