@@ -14,4 +14,8 @@
 (add-hook 'org-mode-hook 'flyspell-mode)
 (add-hook 'org-mode-hook 'turn-on-org-cdlatex)
 
+;; smartparens makes everything amazing...
+(add-hook 'org-mode-hook 'turn-on-smartparens-mode)
+
+
 (provide 'setup-org)

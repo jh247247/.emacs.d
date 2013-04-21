@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ins-src
+# key: inssrc
+# --
+#+BEGIN_SRC $1
+$2
+#+END_SRC

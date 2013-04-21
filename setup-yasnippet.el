@@ -34,8 +34,8 @@
 (add-hook 'org-mode-hook
             (lambda ()
               ;; yasnippet
-              (set (make-local-variable 'yas/trigger-key) "C-<tab>")
-              (define-key yas/keymap "C-<tab>" 'yas/next-field-group)))
+              (set (make-local-variable 'yas/trigger-key) "<tab>")
+              (define-key yas/keymap "<tab>" 'yas/next-field-group)))
 
 
 
