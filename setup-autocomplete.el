@@ -13,6 +13,6 @@
                         "~/.emacs.d/auto-complete/dict"))
 (ac-config-default)
 (define-key ac-complete-mode-map [tab] 'ac-expand)
-(add-hook 'prog-mode-hook 'auto-complete-mode)
+
 
 (provide 'setup-autocomplete)

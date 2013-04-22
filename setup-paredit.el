@@ -27,6 +27,7 @@
       (kill-region (region-beginning) (region-end))
     (paredit-backward-kill-word)))
 
+(add-hook 'global-mode-hook (lambda () (paredit-mode 0)))
 (add-hook 'clojure-mode-hook (lambda () (paredit-mode 1)))
 (add-hook 'nrepl-mode-hook (lambda () (paredit-mode 1)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (paredit-mode 1)))

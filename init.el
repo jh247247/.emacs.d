@@ -101,6 +101,7 @@
 (require 'setup-compile)
 (require 'setup-autocomplete)
 (require 'setup-cc-mode)
+(require 'setup-latex)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
@@ -167,7 +168,10 @@
 (require 'diminish)
 (diminish 'yas/minor-mode)
 (diminish 'eldoc-mode)
-(diminish 'paredit-mode)
+;(diminish 'paredit-mode)
+(diminish 'whitespace-mode)
+(diminish 'fic-mode)
+;(diminish 'auto-complete-mode)
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
