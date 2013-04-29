@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ins-latex
+# key: ilat
+# --
+#+BEGIN_LaTeX
+$2
+#+END_LaTeX
