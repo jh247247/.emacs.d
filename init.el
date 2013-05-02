@@ -103,11 +103,6 @@
 (require 'setup-cc-mode)
 (require 'setup-latex)
 
-;; Default setup of smartparens
-(require 'smartparens-config)
-;; don't know if this will play nice with paredit...
-(add-hook 'prog-mode-hook 'turn-on-smartparens-mode)
-
 ;; Language specific setup files
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
