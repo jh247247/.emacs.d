@@ -314,5 +314,8 @@
 ;; Set a quick and easy keybind to call make
 (global-set-key (kbd "<f1>") 'compile-again)
 
+;; add keybinding to quickly auto indent.
+(global-set-key (kbd "<f3>") 'compile-again)
+
 
 (provide 'key-bindings)

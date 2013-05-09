@@ -102,6 +102,8 @@
 (require 'setup-autocomplete)
 (require 'setup-cc-mode)
 (require 'setup-latex)
+(require 'setup-asm-mips)
+
 
 ;; Language specific setup files
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
@@ -171,10 +173,10 @@
 (require 'diminish)
 (diminish 'yas/minor-mode)
 (diminish 'eldoc-mode)
-;(diminish 'paredit-mode)
+                                        ;(diminish 'paredit-mode)
 (diminish 'whitespace-mode)
 (diminish 'fic-mode)
-;(diminish 'auto-complete-mode)
+                                        ;(diminish 'auto-complete-mode)
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")

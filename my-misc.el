@@ -11,10 +11,10 @@
 ;; Add Urban Dictionary to webjump (C-x g)
 (eval-after-load "webjump"
   '(add-to-list 'webjump-sites '("Urban Dictionary" .
-                             [simple-query
-                              "www.urbandictionary.com"
-                              "http://www.urbandictionary.com/define.php?term="
-                              ""])))
+                                 [simple-query
+                                  "www.urbandictionary.com"
+                                  "http://www.urbandictionary.com/define.php?term="
+                                  ""])))
 
 (defun iwb ()
   "indent whole buffer"
@@ -36,7 +36,7 @@
         (message (format "%d ^M removed from buffer." remove-count))))))
 ;; Various superfluous white-space. Just say no.
 (add-hook 'before-save-hook 'cleanup-buffer-safe)
-(add-hook 'before-save-hook 'iwb)
+;;(add-hook 'before-save-hook 'iwb) ;; can't be used for some modes...
 
 
 ;; Newline after inserting closing tag in html-mode
