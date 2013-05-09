@@ -96,6 +96,8 @@
         sp--self-insert-command
         sp-remove-active-pair-overlay
         sp-self-insert-command
+        subword-left
+        subword-right
         tagedit-forward-slurp-tag
         tagedit-insert-equal
         tagedit-insert-lt
