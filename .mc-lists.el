@@ -23,6 +23,7 @@
         cua-replace-region
         cua-set-mark
         delete-blank-lines
+        delete-frame
         dired-back-to-start-of-files
         duplicate-current-line-or-region
         end-of-buffer

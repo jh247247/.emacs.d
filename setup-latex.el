@@ -1,6 +1,11 @@
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
 
-(add-hook 'LaTeX-mode-hook 'turn-on-outline-minor-mode)
+(add-hook 'LaTeX-mode-hook '(lambda ()
+                              'turn-on-outline-minor-mode
+                              (cdlatex-mode)
+                              (define-key LaTeX-mode-map
+                                (kbd "<tab>")
+                                'indent-for-tab-command)))
 (setq outline-minor-mode-prefix "\C-c\C-o")
 
 (setq TeX-auto-save t)

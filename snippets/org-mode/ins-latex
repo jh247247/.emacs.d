@@ -2,4 +2,4 @@
 # name: ins-latex
 # key: ilat
 # --
-\($1\)
+\\($1\\)

@@ -57,11 +57,10 @@
   (packages-install
    (cons 'exec-path-from-shell melpa)
    (cons 'magit melpa)
-   (cons 'paredit melpa)
    (cons 'move-text melpa)
    (cons 'gist melpa)
    (cons 'htmlize melpa)
-   (cons 'visual-regexp melpa)
+   (cons 'visual-regexp-steroids melpa)
    (cons 'smartparens melpa)
    (cons 'elisp-slime-nav melpa)
    (cons 'slime-js marmalade)
@@ -96,12 +95,9 @@
 (require 'setup-yasnippet)
 (require 'setup-perspective)
 (require 'setup-ffip)
-(require 'setup-html-mode)
-(require 'setup-paredit)
 (require 'setup-compile)
 (require 'setup-autocomplete)
 (require 'setup-cc-mode)
-(require 'setup-latex)
 (require 'setup-asm-mips)
 
 
@@ -119,13 +115,15 @@
 ;; Map files to modes
 (require 'mode-mappings)
 
+;; move-text
+(require 'move-text)
+
 ;; Visual regexp
-(require 'visual-regexp)
+(require 'visual-regexp-steroids)
 (define-key global-map (kbd "M-&") 'vr/query-replace)
 (define-key global-map (kbd "M-/") 'vr/replace)
 
 ;; Tern.js
-
 (add-to-list 'load-path (expand-file-name "tern/emacs" site-lisp-dir))
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
@@ -173,10 +171,9 @@
 (require 'diminish)
 (diminish 'yas/minor-mode)
 (diminish 'eldoc-mode)
-                                        ;(diminish 'paredit-mode)
 (diminish 'whitespace-mode)
 (diminish 'fic-mode)
-                                        ;(diminish 'auto-complete-mode)
+(diminish 'auto-complete-mode)
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")

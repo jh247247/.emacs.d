@@ -26,9 +26,6 @@
 (add-hook 'org-mode-hook 'flyspell-mode)
 (add-hook 'org-mode-hook 'turn-on-org-cdlatex)
 
-;; pretty fonts for native code.
-(setq org-src-fontify-natively t)
-
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((latex . t)))

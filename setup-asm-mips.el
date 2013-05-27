@@ -10,8 +10,8 @@
   (set-syntax-table (make-syntax-table asm-mode-syntax-table))
   (modify-syntax-entry asm-comment-char "< b")
   ;; Fix one level comments.
-  (set (make-local-variable 'comment-start) (string asm-comment-char)))
-
-(add-hook 'mips-mode-hook '(lambda () (setq tab-always-indent t)))
+  (set (make-local-variable 'comment-start) (string asm-comment-char))
+  (setq tab-always-indent t)
+  (define-key asm-mode-map "\C-c :" 'comment-box))
 
 (provide 'setup-asm-mips)
