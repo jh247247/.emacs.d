@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: stringout
+# key: stringout
+# --
+addi $v0, $zero, 4
+la $a0, $1
+syscall

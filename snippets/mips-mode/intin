@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: intin
+# key: intin
+# --
+addi $v0, $zero, 5
+syscall
+addi $1, $v0, 0

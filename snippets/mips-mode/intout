@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: intout
+# key: intout
+# --
+addi $v0, $zero, 1
+add $a0, $zero, $1
+syscall

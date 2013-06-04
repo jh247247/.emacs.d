@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: stringin
+# key: stringin
+# --
+addi $v0, $zero, 8
+add $a0, $zero, $1
+add $a1, $zero, $2
+syscall
