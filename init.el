@@ -99,6 +99,7 @@
 (require 'setup-autocomplete)
 (require 'setup-cc-mode)
 (require 'setup-asm-mips)
+(require 'setup-python)
 
 
 ;; Language specific setup files
