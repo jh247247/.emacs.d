@@ -1,5 +1,4 @@
 
-
 (setq font-lock-maximum-decoration t
       color-theme-is-global t
       truncate-partial-width-windows nil)
@@ -46,7 +45,6 @@
 (add-hook 'prog-mode-hook 'turn-on-fic-mode)
 
 ;; highlight uneeded whitespace and columns past char 80
-;; 70 is better for small laptop screens...
 (require 'whitespace)
 (setq whitespace-line-column 80)
 (setq whitespace-style '(face lines-tail))
