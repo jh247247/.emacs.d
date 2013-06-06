@@ -69,8 +69,10 @@
    (cons 'gitignore-mode melpa)
    (cons 'clojure-mode melpa)
    (cons 'nrepl melpa)
-   (cons 'auctex melpa)
-   (cons 'cdlatex melpa)))
+   (cons 'auto-complete melpa)
+   (cons 'mmm-mode melpa)
+   (cons 'color-theme melpa)))
+
 
 (condition-case nil
     (init--install-packages)
