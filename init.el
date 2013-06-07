@@ -195,6 +195,4 @@
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
-;; Conclude init by setting up specifics for the current user
-(when (file-exists-p user-settings-dir)
-  (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
+(global-semantic-folding-mode t)
