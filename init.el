@@ -71,7 +71,8 @@
    (cons 'nrepl melpa)
    (cons 'auto-complete melpa)
    (cons 'mmm-mode melpa)
-   (cons 'color-theme melpa)))
+   (cons 'color-theme melpa)
+   (cons 'fic-mode melpa)))
 
 
 (condition-case nil
@@ -195,4 +196,4 @@
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
-(global-semantic-folding-mode t)
+(require 'setup-prog)

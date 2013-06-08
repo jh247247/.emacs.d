@@ -28,7 +28,7 @@
 (show-paren-mode 1)
 
 (when window-system
-  (setq frame-title-format '(buffer-file-name "%f" ("%b")))
+  (setq frame-title-format (concat  "%b - emacs@" system-name))
   (tooltip-mode -1)
   (blink-cursor-mode -1))
 
@@ -40,9 +40,6 @@
 (color-theme-initialize)
 (color-theme-billw)
 
-;; add syntax highlighting for special tags (TODO, FIXME, KLUDGE)
-(require 'fic-mode)
-(add-hook 'prog-mode-hook 'turn-on-fic-mode)
 
 ;; highlight uneeded whitespace and columns past char 80
 (require 'whitespace)

@@ -14,5 +14,9 @@
 (ac-config-default)
 (define-key ac-complete-mode-map [tab] 'ac-expand)
 
+;; add syntax highlighting for special tags (TODO, FIXME, KLUDGE)
+(require 'fic-mode)
+(add-hook 'prog-mode-hook 'turn-on-fic-mode)
+
 
 (provide 'setup-autocomplete)
