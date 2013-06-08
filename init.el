@@ -103,6 +103,7 @@
 (require 'setup-cc-mode)
 (require 'setup-asm-mips)
 (require 'setup-python)
+(require 'setup-prog)
 
 
 ;; Language specific setup files
@@ -195,5 +196,3 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
-
-(require 'setup-prog)
