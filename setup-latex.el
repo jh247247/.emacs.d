@@ -15,6 +15,6 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
 ;;(load "auctex.el" nil t t) ; YEAH, AUCTEX!
 ;;(load "preview-latex.el" nil t t)
-(setq-default TeX-master nil) ; Query for master file.
+;;(setq-default TeX-master nil) ; Query for master file.
 
 (provide 'setup-latex)

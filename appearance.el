@@ -45,6 +45,6 @@
 (require 'whitespace)
 (setq whitespace-line-column 80)
 (setq whitespace-style '(face lines-tail))
-(global-whitespace-mode t)
+(add-hook 'prog-mode-hook 'whitespace-mode)
 
 (provide 'appearance)

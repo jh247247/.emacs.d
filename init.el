@@ -72,7 +72,8 @@
    (cons 'auto-complete melpa)
    (cons 'mmm-mode melpa)
    (cons 'color-theme melpa)
-   (cons 'fic-mode melpa)))
+   (cons 'fic-mode melpa)
+   (cons 'cdlatex melpa)))
 
 
 (condition-case nil
