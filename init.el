@@ -73,7 +73,8 @@
    (cons 'mmm-mode melpa)
    (cons 'color-theme melpa)
    (cons 'fic-mode melpa)
-   (cons 'cdlatex melpa)))
+   (cons 'cdlatex melpa)
+   (cons 'rainbow-delimiters melpa)))
 
 
 (condition-case nil
