@@ -4,10 +4,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "Black" :foreground "White" :inverse-video nil :box nil :strike-t*hrough nil :overline nil :underline nil :slant normal :weight normal :width normal :height 105))))
- '(diff-refine-change ((t (:background "midnight blue"))))
+ '(diff-refine-change ((t (:background "midnight blue"))) t)
  '(highlight ((((class color) (min-colors 88) (background dark)) (:background "#111111"))))
- '(js2-function-param-face ((t (:foreground "LightGoldenrod"))))
- '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) nil)))
+ '(js2-function-param-face ((t (:foreground "LightGoldenrod"))) t)
+ '(mmm-code-submode-face ((t (:background "DimGray"))))
+ '(mmm-default-submode-face ((t nil)))
+ '(mmm-delimiter-face ((t (:weight bold))) t)
+ '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) nil)) t)
  '(rainbow-delimiters-depth-1-face ((t (:foreground "red"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "orange red"))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "dark orange"))))
@@ -27,7 +30,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(TeX-PDF-mode t)
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-night)))
+ '(custom-safe-themes
+   (quote
+    ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default)))
  '(ido-use-filename-at-point nil)
+ '(mmm-submode-decoration-level 1)
  '(safe-local-variable-values
    (quote
     ((eval font-lock-add-keywords nil

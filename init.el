@@ -76,6 +76,7 @@
    (cons 'cdlatex melpa)
    (cons 'rainbow-delimiters melpa)))
 
+(when (not package-archive-contents) (package-refresh-contents))
 
 (condition-case nil
     (init--install-packages)
