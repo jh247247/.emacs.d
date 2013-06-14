@@ -38,9 +38,10 @@
 ;; go back to old, comfortable theme...
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-sanityinc-tomorrow-night)
+(color-theme-billw)
+;;(color-theme-sanityinc-tomorrow-night)
 ;;(color-theme-monokai)
-;; (color-theme-billw)
+
 
 
 ;; highlight uneeded whitespace and columns past char 80
