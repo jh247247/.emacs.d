@@ -56,8 +56,6 @@
 ;; Turn on the menu bar for exploring new modes
 (global-set-key (kbd "C-<f10>") 'menu-bar-mode)
 
-;; Use shell-like backspace C-h, rebind help to F1
-(define-key key-translation-map [?\C-h] [?\C-?])
 (global-set-key (kbd "<f2>") 'help-command)
 
 (global-set-key (kbd "M-h") 'kill-region-or-backward-word)

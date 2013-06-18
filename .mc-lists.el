@@ -128,6 +128,7 @@
         magit-status
         mc/add-cursor-on-click
         mc/add-cursors-to-all-matches
+        python-indent-dedent-line-backspace
         smex
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit

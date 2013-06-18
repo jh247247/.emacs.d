@@ -199,3 +199,7 @@
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
+
+;; Start an edit server because I want to.
+(require 'edit-server)
+(edit-server-start)
