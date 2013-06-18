@@ -74,7 +74,8 @@
    (cons 'color-theme melpa)
    (cons 'fic-mode melpa)
    (cons 'cdlatex melpa)
-   (cons 'rainbow-delimiters melpa)))
+   (cons 'rainbow-delimiters melpa)
+   (cons 'outline-magic melpa)))
 
 (when (not package-archive-contents) (package-refresh-contents))
 
