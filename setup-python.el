@@ -1,7 +1,11 @@
 
 ;; make it so that doctrings are pretty.
 (require 'mmm-mode)
-(setq mmm-global-mode 'maybe)
+
+(setq mmm-global-mode 'auto
+      mmm-submode-decoration-level 2
+      mmm-parse-when-idle t)
+
 (mmm-add-classes
  '((python-rst
     :submode rst-mode
