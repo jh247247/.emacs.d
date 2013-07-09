@@ -10,7 +10,7 @@
  '((python-rst
     :submode rst-mode
     :front "^ *[ru]?\"\"\"[^\"]*$"
-    :back "^ *\"\"\""
+    :back "\"\"\"$"
     :include-front t
     :include-back t
     :end-not-begin t)))
