@@ -15,8 +15,9 @@
 ;; outline mode for code folding
 ;; hide enerything at startup but headers.
 (add-hook 'prog-mode-hook '(lambda ()
-                             (outline-minor-mode)
+                             (outline-minor-mode 1)
                              (hide-sublevels 1)))
+(add-hook 'emacs-lisp-mode-hook '(lambda () (outline-minor-mode -1)))
 
 
 (require 'outline-magic)

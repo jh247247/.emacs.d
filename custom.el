@@ -8,7 +8,7 @@
  '(highlight ((((class color) (min-colors 88) (background dark)) (:background "#111111"))))
  '(js2-function-param-face ((t (:foreground "LightGoldenrod"))) t)
  '(mmm-code-submode-face ((t (:background "DimGray"))))
- '(mmm-default-submode-face ((t (:foreground "AntiqueWhite4"))))
+ '(mmm-default-submode-face ((t nil)))
  '(mmm-delimiter-face ((t (:weight bold))) t)
  '(mumamo-background-chunk-submode ((((class color) (min-colors 88) (background dark)) nil)) t)
  '(rainbow-delimiters-depth-1-face ((t (:foreground "gray100"))))

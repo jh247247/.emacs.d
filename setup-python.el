@@ -14,6 +14,7 @@
     :include-front t
     :include-back t
     :end-not-begin t)))
+
 (mmm-add-mode-ext-class 'python-mode nil 'python-rst)
 
 (provide 'setup-python)
