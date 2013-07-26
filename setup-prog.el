@@ -12,39 +12,19 @@
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
-;; outline mode for code folding
-;; hide enerything at startup but headers.
-(add-hook 'prog-mode-hook '(lambda ()
-                             (outline-minor-mode 1)
-                             (hide-sublevels 1)))
-(add-hook 'emacs-lisp-mode-hook '(lambda () (outline-minor-mode -1)))
-
-
-(require 'outline-magic)
-(define-key outline-minor-mode-map (kbd "<C-tab>") 'outline-cycle)
-
-;; Outline-minor-mode key map
-(define-prefix-command 'cm-map nil "Outline-")
-
-;; HIDE
-(define-key cm-map "q" 'hide-sublevels)    ; Hide everything but the top-level headings
-(define-key cm-map "t" 'hide-body)         ; Hide everything but headings (all body lines)
-(define-key cm-map "o" 'hide-other)        ; Hide other branches
-(define-key cm-map "c" 'hide-entry)        ; Hide this entry's body
-(define-key cm-map "l" 'hide-leaves)       ; Hide body lines in this entry and sub-entries
-(define-key cm-map "d" 'hide-subtree)      ; Hide everything in this entry and sub-entries
-;; SHOW
-(define-key cm-map "a" 'show-all)          ; Show (expand) everything
-(define-key cm-map "e" 'show-entry)        ; Show this heading's body
-(define-key cm-map "i" 'show-children)     ; Show this heading's immediate child sub-headings
-(define-key cm-map "k" 'show-branches)     ; Show all sub-headings under this heading
-(define-key cm-map "s" 'show-subtree)      ; Show (expand) everything in this heading & below
-;; MOVE
-(define-key cm-map "u" 'outline-up-heading)                ; Up
-(define-key cm-map "n" 'outline-next-visible-heading)      ; Next
-(define-key cm-map "p" 'outline-previous-visible-heading)  ; Previous
-(define-key cm-map "f" 'outline-forward-same-level)        ; Forward - same level
-(define-key cm-map "b" 'outline-backward-same-level)       ; Backward - same level
-(global-set-key "\M-o" cm-map)
-
+(add-hook 'prog-mode-hook 'hs-minor-mode)
+(autoload 'hideshowvis-enable "hideshowvis" "Highlight foldable regions")
+(autoload 'hideshowvis-minor-mode
+  "hideshowvis"
+  "Will indicate regions foldable with hideshow in the fringe."
+  'interactive)
+(add-hook 'prog-mode-hook
+  (lambda()
+    (local-set-key (kbd "C-c <right>") 'hs-show-block)
+    (local-set-key (kbd "C-c <left>")  'hs-hide-block)
+    (local-set-key (kbd "C-c <up>")    'hs-hide-all)
+    (local-set-key (kbd "C-c <down>")  'hs-show-all)
+    (hs-minor-mode t)))
+(add-hook 'prog-mode-hook 'hideshowvis-enable)
+(hideshowvis-symbols)
 (provide 'setup-prog)
