@@ -1,6 +1,6 @@
 
 ;; make it so that doctrings are pretty.
-(require 'mmm-mode)
+(require 'mmm-auto)
 
 (setq mmm-global-mode 'auto
       mmm-submode-decoration-level 2

@@ -11,6 +11,7 @@
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq TeX-save-query nil)
+(setq-default TeX-master nil)
 
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
 ;;(load "auctex.el" nil t t) ; YEAH, AUCTEX!
